@@ -2,7 +2,7 @@
 
 :root {
     --light: #f6f6f9;
-    --primary: #1976D2;
+    --primary: #D32F2F;
     --light-primary: #CFE8FF;
     --grey: #eee;
     --dark-grey: #AAAAAA;
@@ -620,4 +620,149 @@ body{
         min-width: 340px;
     }
 
+}
+
+
+
+.container{
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: #fff;
+    margin: 0 15px;
+    padding: 30px;
+}
+
+.container header{
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.container form{
+    position: relative;
+    min-height: 490px;
+    margin-top: 16px;
+    background-color: #fff;
+    
+}
+
+.container form .details{
+    margin-top: 10px;
+}
+
+.container form .title{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+
+
+.container form .feilds{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.container form .input-feilds{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.input-feilds label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input-feilds input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    color: #333;
+    height: 42px;
+    margin: 8px 0;
+    padding: 0px 10px;
+}
+
+.input-feilds input:is(:focus , :valid){
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13) ;
+}
+
+.input-feilds input[type = "date"]{
+    color: #707070;
+}
+
+.input-feilds input[type = "date"]:valid{
+    color: #333;
+}
+
+.input-feilds select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    color: #333;
+    height: 42px;
+    margin: 8px 0;
+    padding: 0px 10px;
+}
+.container form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0px;
+    cursor: pointer;
+}
+
+.btns{
+    display: flex;
+    gap: 20px;
+}
+
+.submits{
+    background: rgb(18, 18, 250);transition: 0.5s ease-in;
+}
+
+.submits:hover{
+    background: rgb(56, 56, 255) ; 
+}
+
+.cancel{
+    background: rgb(255, 0, 98);transition: 0.5s ease-in;
+}
+
+.cancel:hover{
+    background: rgb(255, 31, 117);
+}
+
+.admiin{
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: rgb(255, 0, 98);
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#AddMovie{
+    display: none;
 }
